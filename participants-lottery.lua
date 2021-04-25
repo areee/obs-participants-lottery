@@ -1,10 +1,10 @@
-obs           = obslua
-source_name   = ""
-last_text     = ""
-participants_text     = ""
-activated     = false
+obs                 = obslua
+source_name         = ""
+last_text           = ""
+participants_text   = ""
+activated           = false
 
-hotkey_id     = obs.OBS_INVALID_HOTKEY_ID
+hotkey_id           = obs.OBS_INVALID_HOTKEY_ID
 
 function run_lottery()
     string.split =
