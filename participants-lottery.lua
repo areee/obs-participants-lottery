@@ -43,7 +43,7 @@ function run_lottery()
     for i = 1, #OrderList do
         text = text .. NameList[OrderList[i]]
 
-        if i == items_per_row then
+        if i % items_per_row == 0 then
             text = text .. "\n"
         elseif i ~= #OrderList then
             text = text .. ","
