@@ -3,6 +3,7 @@ source_name         = ""
 last_text           = ""
 participants_text   = ""
 activated           = false
+items_per_row       = 0
 
 hotkey_id           = obs.OBS_INVALID_HOTKEY_ID
 
@@ -39,7 +40,15 @@ function run_lottery()
 
     local text = ""
 
-    for i = 1, #OrderList do text = text .. NameList[OrderList[i]] .. "\n" end
+    for i = 1, #OrderList do
+        text = text .. NameList[OrderList[i]]
+
+        if i == items_per_row then
+            text = text .. "\n"
+        elseif i ~= #OrderList then
+            text = text .. ","
+        end
+    end
 
     if text ~= last_text then
         local source = obs.obs_get_source_by_name(source_name)
@@ -120,6 +129,7 @@ function script_properties()
                                 obs.OBS_TEXT_DEFAULT)
     obs.obs_properties_add_button(props, "start_again_button", "Start again",
                                   start_again_button_clicked)
+    obs.obs_properties_add_int(props, "items", "Items per row", 1, 100000, 1)
 
     return props
 end
@@ -129,6 +139,7 @@ function script_update(settings)
 
     source_name = obs.obs_data_get_string(settings, "source")
     participants_text = obs.obs_data_get_string(settings, "participants_text")
+    items_per_row = obs.obs_data_get_int(settings, "items")
 
     start_again(true)
 end
@@ -136,6 +147,7 @@ end
 function script_defaults(settings)
     obs.obs_data_set_default_string(settings, "participants_text",
                                     "Mike, Catherine, Tim, Julia")
+    obs.obs_data_set_default_int(settings, "items", 10)
 end
 
 function script_save(settings)
