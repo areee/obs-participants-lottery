@@ -145,8 +145,8 @@ end
 
 function script_defaults(settings)
     Obs.obs_data_set_default_string(settings, "participants_text",
-                                    "Mike, Catherine, Tim, Julia")
-    Obs.obs_data_set_default_int(settings, "items", 10)
+                                    "Mike, Catherine, Tim, Julia, Max, Kate, Terry, June, Rick, Nina")
+    Obs.obs_data_set_default_int(settings, "items", 5)
 end
 
 function script_save(settings)
