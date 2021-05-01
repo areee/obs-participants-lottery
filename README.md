@@ -12,6 +12,7 @@ Made 2021 by Arttu Ylhävuori (AY). Licensed under [GPL-3.0 License](https://git
   - Removed all unnecessary commenting
 
 ## Features
+
 - The script is available in English, Finnish and Swedish
 - Add participant names of a meeting
 - Automatically draw participants into a new order
