@@ -11,6 +11,13 @@ Made 2021 by Arttu Ylhävuori (AY). Licensed under [GPL-3.0 License](https://git
   - Renamed some functions & variables based on the lottery idea
   - Removed all unnecessary commenting
 
+## Features
+- The script is available in English, Finnish and Swedish
+- Add participant names of a meeting
+- Automatically draw participants into a new order
+- Draw again by clicking the _Start again_ button
+- Change the name list layout by updating the _Names per row_ field
+
 ## Screenshots
 
 ![A scripts view in OBS showing a loaded participants lottery file.](https://raw.githubusercontent.com/areee/obs-participants-lottery/main/screenshots/image1.png)
