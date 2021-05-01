@@ -128,7 +128,7 @@ function script_properties()
                                 Obs.OBS_TEXT_DEFAULT)
     Obs.obs_properties_add_button(props, "start_again_button", "Start again",
                                   Start_again_button_clicked)
-    Obs.obs_properties_add_int(props, "items", "Items per row", 1, 100000, 1)
+    Obs.obs_properties_add_int(props, "items", "Names per row", 1, 100000, 1)
 
     return props
 end
