@@ -14,7 +14,9 @@ Made 2021 by Arttu Ylhävuori (AY). Licensed under [GPL-3.0 License](https://git
 ## Screenshots
 
 ![A scripts view in OBS showing a loaded participants lottery file.](https://raw.githubusercontent.com/areee/obs-participants-lottery/main/screenshots/image1.png)
-_Image 1: A scripts view (Tools -> Scripts) with default settings when participants-lottery.lua is added._
+
+_Image 1: A scripts view (Tools -> Scripts) with default settings when participants-lottery-en.lua is added._
 
 ![Example names shown as an output in OBS scene.](https://raw.githubusercontent.com/areee/obs-participants-lottery/main/screenshots/image2.png)
+
 _Image 2: The final result in a scene._
